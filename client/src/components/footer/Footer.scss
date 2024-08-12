@@ -1,0 +1,78 @@
+.Footer {
+  background-color: #000;
+  color: #f0f0f0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+
+  .Footer-Left {
+    flex: 2;
+    .Brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e11d48;
+    }
+
+    .Description {
+      margin-top: 10px;
+      max-width: 300px;
+      line-height: 1.5;
+      font-size: 12px;
+      color: #7a7a7a;
+    }
+
+    .SocialIcons {
+      height: 50px;
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+
+      a {
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        color: #fff;
+        font-size: 18px;
+        border: 1px solid #f0f0f0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        svg{
+            color: #f0f0f0;
+            width: 20px;
+        }
+      }
+    }
+  }
+
+  .Footer-Right {
+    display: flex;
+    justify-content: space-between;
+    flex: 4;
+
+    .Company,
+    .QuickAccess,
+    .DsaSheets,
+    .DsaPlaylist {
+      .Title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #e11d48;
+      }
+
+      div {
+        margin-bottom: 10px;
+      }
+    }
+
+    .Company,
+    .QuickAccess,
+    .DsaSheets,
+    .DsaPlaylist {
+      margin-right: 40px;
+    }
+  }
+}
