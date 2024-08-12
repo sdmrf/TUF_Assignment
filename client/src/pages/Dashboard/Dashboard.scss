@@ -1,0 +1,96 @@
+.Dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b0b;
+    color: white;
+
+    padding: 20px 50px;
+    //height: 100vh;
+    width: 100%;
+
+    .Content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: center;
+        border: 1px solid #7a7a7a;
+        border-radius: 20px;
+        padding: 20px;
+
+        .Title{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        form{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 25px;
+
+            .FormRow{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+
+                label{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+
+                input{
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: 1px solid #7a7a7a;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: #0b0b0b;
+
+                }
+
+                select{
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: 1px solid #7a7a7a;
+                    font-size: 1.2rem;
+                }
+
+                .Button{
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #007bff;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+
+                    &:hover{
+                        background-color: #0056b3;
+                    }
+                }
+            }
+
+            .Visible{
+                flex-direction: row;
+                gap: 20px;
+
+                input{
+                    width: 50px;
+                }
+            }
+
+
+        }
+    }
+}
